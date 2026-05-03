@@ -1,0 +1,7 @@
+data-binds/spark/jars/
+data-binds/postgres/
+wget-log
+*.gz
+__pycache__/
+*.pyc
+.env

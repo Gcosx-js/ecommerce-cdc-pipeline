@@ -1,0 +1,11 @@
+FROM apache/airflow:2.9.1-python3.8
+
+RUN pip install --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.9.1/constraints-3.8.txt" \
+    apache-airflow-providers-apache-spark \
+    psycopg2-binary
+
+USER root
+RUN apt-get update && apt-get install -y openjdk-17-jre-headless
+
+USER airflow
+RUN pip install pyspark==3.5.3

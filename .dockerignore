@@ -1,0 +1,7 @@
+notebooks/
+spark-jobs/
+.git/
+data-binds/
+docker-compose.yml
+!data-binds/spark/jars/
+!data-binds/spark/jars/*.jardata-binds/postgres
